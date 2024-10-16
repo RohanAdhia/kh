@@ -1,0 +1,44 @@
+html, body{
+    font-family: monospace;
+    text-align: center;
+    height: 100%; /* Ensure the body takes the full height */
+    margin: 0;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+}
+
+.container1 {
+    flex: 1; /* Allow this div to grow and take available space */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    /* height: 100vh; */
+}
+
+.container2 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.style {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    display: inline-flex;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
