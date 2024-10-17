@@ -5,11 +5,21 @@ html, body{
     margin: 0;
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Stack children vertically */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 500% 500%; /* Set background size for animation */
+    animation: gradient 15s ease infinite;
 }
+
+@keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
 
 .container1 {
     flex: 1; /* Allow this div to grow and take available space */
     display: flex; /* Use flexbox for centering */
+    flex-direction: column;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     /* height: 100vh; */
@@ -19,6 +29,14 @@ html, body{
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+
+.container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10px; */
+    /* padding: 5px; */
 }
 
 .style {
