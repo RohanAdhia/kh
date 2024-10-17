@@ -192,7 +192,10 @@ document.addEventListener("keydown", function(e) {
     
  
     // Check if the key pressed is in the colors object
-    if (colors[k]) {
+    if(k === " "){
+        this.location.reload();
+    }
+    else if (colors[k]) {
         var i = Math.floor(Math.random() * colors[k].length);
         document.body.style.background = colors[k][i].color;
         label.textContent = " • " + colors[k][i].name + " " + colors[k][i].color +" • "; // Show the color name
